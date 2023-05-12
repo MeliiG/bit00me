@@ -1,0 +1,401 @@
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(82,75,191);
+    background: linear-gradient(90deg, rgba(82,75,191,1) 6%, rgba(114,186,205,1) 29%, rgba(0,212,255,1) 61%);
+    background-repeat: no-repeat;
+}
+
+/*Inicio Cabecera*/
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+    font-family: 'BebasNeue';
+    color: white;
+}
+
+#logo{
+    display: block;
+    width: 200px;
+    background-color: transparent;
+   /*  text-align: center; */
+    margin-top: 5px; 
+    margin-left: 90px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    /* overflow: hidden; */ /* todo lo que salga fuera del logo se oculta */
+    /* transition: all 300ms; */
+}
+
+#logo .imagen{
+ display: flex;
+ margin-top: 2%;
+ font-size: 30px ;
+  margin-left: 26px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 60px rgb(182, 83, 236); 
+}
+
+#logo a{
+    margin-top: 4%;
+    margin-left: 2%;
+}
+
+
+
+
+#logo h3{
+    display: block;
+    float: right;
+    font-size: 30px; 
+    margin-top: -20%;
+    margin-right: 6.5%;    
+}
+
+#menu{
+    display: inline-flex;
+    /* margin-right: 15%; */
+    height: 70px;
+    background-color: transparent;
+}
+
+#menu ul li {
+    font-size: 24px;
+    display: inline-block; /* flotar o situar en linea */ 
+    margin: 0px 20px 0px 20px;   
+    letter-spacing: 1px ;
+    line-height: 35px;
+}
+
+#menu ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+/*fin Cabecera*/
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    color: rgb(105, 28, 109);
+    font-family: 'Comfortaa';
+}
+
+/*Contenidoooo1*/
+
+#reseña,#reseña2  {
+    flex-wrap: wrap;
+    border: 5px dashed  rgb(103, 22, 96) ; 
+    max-width: 1200px;   
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  /*   justify-self: center;
+    justify-content: center; */
+    
+}
+#foto{
+    width: 25%;
+    border: 5px dashed  rgb(42, 206, 243) ;
+    text-align: justify;
+    flex-wrap: wrap;
+    
+}
+
+
+/*Contenidoooo2******/
+.contenedor{
+    border: 3px solid  black ;     
+}
+
+#notas{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    width:75%;
+    letter-spacing: 2px;
+    }
+
+#notas div{
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    margin: 1px;
+    padding: 2px;
+    align-items: center;
+    width: 19.5%;
+}
+
+#notas h3{
+    text-align: center;
+    font-size: 24px;
+}
+
+
+#notas img{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    margin: auto;
+}
+
+#reseña2{
+    border: 5px dashed  rgb(120, 227, 141) ; 
+    justify-content: center;
+}
+
+#multi{
+    width: 37%;
+    border: 5px dashed  rgb(86, 42, 243) ;
+       
+}
+
+#frase{
+    background-color: rgb(131, 85, 174);
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    border: 5px dashed  rgb(227, 120, 218) ;
+    margin-left: 20%; 
+    margin-bottom: auto;
+    margin-top: auto;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px coral inset;
+}
+
+
+
+
+
+
+/*Formularioooo*/
+fieldset{
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: flex;
+}
+
+
+
+
+
+
+
+#parte1,#parte2{
+    display: block;
+    border: 2px dashed blue;
+    width: 40%;
+    
+}
+
+#parte1 input[type="text"],
+#parte1 input[type="email"],
+#parte1 input[type="password"]{
+
+    display: block;
+    margin: 0px auto;
+    margin-top: 20px;
+    height:30px;
+    border: 1px solid #ccc ;
+    box-shadow: 1px 1px 1px #ccc inset;
+    border-radius: 5px;
+    padding-left: 20px;
+    color: grey;
+}
+
+#parte1 label{
+    display: flex;
+    margin:auto;
+    width: 53%;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+#parte2 {
+    display: block;
+    margin-top: 20px;
+    margin:auto;
+    width: 53%;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+#mensaje{
+    display: flex;
+}
+
+/* pie de pagina */
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+    font-family: 'BebasNeue';
+    color: white;
+}
+
+@media(max-width:1168px){
+
+    #reseña,#reseña2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    #foto{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    #notas{
+        margin: auto;
+        width: 100%;
+    }
+
+    #notas div{
+        margin: 2px;
+    }
+
+    #multi{
+        width: 37%;
+        border: 5px dashed  rgb(86, 42, 243) ;
+           
+    }
+
+    #frase{
+        width: 30%;
+        margin-left: 60%; 
+        margin-bottom: 8.7%;
+        margin-top: -38.4%;
+        border-radius: 5%;
+    }
+
+}
+
+
+@media(max-width:916px){
+
+    #header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 70px;
+        background-color: #000000;
+        font-family: 'BebasNeue';
+        color: white;
+    }
+    
+    #logo{
+        display: block;
+        /* width: 200px; */
+        background-color: transparent;
+        /* text-align: center; */
+        margin-top: 5px;
+        margin-left: 33px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+
+
+    #reseña,#reseña2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #notas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 70%;
+    }
+    #notas div{
+        margin: 2px;
+        width:48%;
+    }
+
+    #frase{
+        width: 30%;
+        margin-left: 63.9%;
+        margin-bottom: 8.7%;
+        margin-top: -52.3%;
+        border-radius: 5%;
+    }
+
+}
+
+@media(max-width:529px){
+
+
+    #logo{
+        display: block;
+        /* width: 200px; */
+        background-color: transparent;
+        /* text-align: center; */
+        margin-top: 5px;
+        margin-left: 2px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    #logo h3 {
+        display: block;
+        float: right;
+        font-size: 20px;
+        margin-top: -20%;
+        margin-right: 4.5%;
+    }
+
+    #menu ul li {
+        font-size: 10px;
+        display: flex; /* flotar o situar en linea */ 
+        margin: 1px;   
+        letter-spacing: 1px ;
+        line-height: 14px;
+        margin-right: 60px;
+      
+    }
+    #multi{
+        width: 100%;
+        border: 5px dashed  rgb(86, 42, 243) ;
+           
+    }
+
+    #frase{
+        width: 50%;
+        margin-left: 30%; 
+        margin-bottom: 8.7%;
+        margin-top: 1%;
+        border-radius: 5%;
+    }
+
+    
+}
