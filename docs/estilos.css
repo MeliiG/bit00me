@@ -4,6 +4,8 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 body{
@@ -92,29 +94,59 @@ body{
     display: flex;
     justify-content: center;
     color: rgb(105, 28, 109);
-    font-family: 'Comfortaa';
+    text-decoration: underline;
+    font-family: 'Roboto Slab', serif;
 }
 
 /*Contenidoooo1*/
 
 #reseña,#reseña2  {
     flex-wrap: wrap;
-    border: 5px dashed  rgb(103, 22, 96) ; 
+    border: 5px double  rgb(103, 22, 96) ; 
+    border-radius: 2px 5px;
+    padding: 2%;
     max-width: 1200px;   
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    background: rgba(221, 189, 219, 0.236);
+    margin-bottom: 2%;
+    
+    
   /*   justify-self: center;
     justify-content: center; */
     
 }
 #foto{
     width: 25%;
-    border: 5px dashed  rgb(42, 206, 243) ;
+    border: 5px dashed   rgb(103, 22, 96) ;;
     text-align: justify;
     flex-wrap: wrap;
+    padding: 1%;
+    background-color: rgba(255, 192, 234, 0.47);   
     
 }
+
+#foto img{
+    border-radius: 5%;
+    box-shadow: -2px 6px 8px rgb(230, 102, 230) ;
+}
+.fi{
+    display: block;
+    margin-top: -2.8px;
+    margin-left: 22.4px;
+}
+
+figcaption{
+    margin-top: 2px;
+    font-size: 17px;
+}
+
+/* figcaption:hover{
+    margin-top: 2px;
+    font-size: 17px;
+    text-shadow: rgb(230, 102, 230) ;
+} */
 
 
 /*Contenidoooo2******/
@@ -125,25 +157,47 @@ body{
 #notas{
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
-    width:75%;
+    /* background-color: blue; */
+    width:73%;
     letter-spacing: 2px;
+    margin-left: 16.7px;
     }
 
 #notas div{
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: blueviolet;
+    background-color: rgba(87, 0, 168, 0.738);
+    height: 39.2%;
     margin: 1px;
     padding: 2px;
     align-items: center;
     width: 19.5%;
+    border-radius: 30%;
+    transition: all 300ms;
+    border: 4px solid rgb(193 196 203);
 }
 
+/* #notas div:hover{
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(202, 43, 226, 0.787);
+    margin: 1px;
+    padding: 2px;
+    align-items: center;
+    width: 19.5%;
+    border-radius: 42%;
+    color:#ccc;
+} */
+
 #notas h3{
+    color: #ccc;  
     text-align: center;
-    font-size: 24px;
+    font-size: 24px;    
 }
+
+/* #notas h3:hover{
+    color: #ccc;   
+} */
 
 
 #notas img{
@@ -152,16 +206,26 @@ body{
     text-align: center;
     height: 100px;
     margin: auto;
+    border-radius: 20%;
+    box-shadow: -0.6px -1.5px 4.5px 8.2px rgb(245 196 245)
 }
 
+/* #notas img:hover{
+    transform: scale(1.5,1.5);
+    box-shadow: 2px 2px  1px rgb(219, 39, 255);
+    border-radius: 20%;
+    transition: all 300ms;
+    
+} */
+
 #reseña2{
-    border: 5px dashed  rgb(120, 227, 141) ; 
+    /* border: 5px dashed  rgb(120, 227, 141) ;  */
     justify-content: center;
 }
 
 #multi{
     width: 37%;
-    border: 5px dashed  rgb(86, 42, 243) ;
+    /* border: 5px dashed  rgb(86, 42, 243) ; */
        
 }
 
@@ -198,7 +262,7 @@ fieldset{
 
 #parte1,#parte2{
     display: block;
-    border: 2px dashed blue;
+    /* border: 2px dashed blue; */
     width: 40%;
     
 }
@@ -243,6 +307,8 @@ fieldset{
 
 #footer{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -250,7 +316,23 @@ fieldset{
     background-color: #000000;
     font-family: 'BebasNeue';
     color: white;
+    height: 15vh;
 }
+
+
+  #redessociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    color: rgb(144, 44, 238);
+    font-size: 40px;
+  }
+
+  #redessociales i:hover{
+    color: rgba(222, 111, 239, 0.609);
+    transform: scale(1.2,1.2);
+  }
 
 @media(max-width:1168px){
 
@@ -267,6 +349,7 @@ fieldset{
         display: flex;
         width: 100%;
         justify-content: center;
+        margin-left: -15.2px;
     }
 
 
@@ -281,7 +364,7 @@ fieldset{
 
     #multi{
         width: 37%;
-        border: 5px dashed  rgb(86, 42, 243) ;
+       /*  border: 5px dashed  rgb(86, 42, 243) ; */
            
     }
 
@@ -385,7 +468,7 @@ fieldset{
     }
     #multi{
         width: 100%;
-        border: 5px dashed  rgb(86, 42, 243) ;
+                /* border: 5px dashed  rgb(86, 42, 243) ; */
            
     }
 
