@@ -14,6 +14,7 @@ body{
     background: rgb(82,75,191);
     background: linear-gradient(90deg, rgba(82,75,191,1) 6%, rgba(114,186,205,1) 29%, rgba(0,212,255,1) 61%);
     background-repeat: no-repeat;
+    /* padding: 1%; */
 }
 
 /*Inicio Cabecera*/
@@ -26,6 +27,7 @@ body{
     background-color: #000000;
     font-family: 'BebasNeue';
     color: white;
+    position: relative;
 }
 
 #logo{
@@ -90,14 +92,58 @@ body{
 
 /*fin Cabecera*/
 
+/**aquiiii**/
+
+#fondo-titulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 30px;
+    background-color: background: rgb(166,67,223);
+    background: linear-gradient(90deg, rgb(166 67 223 / 49%) 0%, rgb(205 81 186 / 72%) 0%, rgb(113 41 164 / 76%) 10%, rgb(189 81 190 / 47%) 36%, rgb(142 76 203 / 60%) 54%, rgb(219 148 233 / 75%) 69%);
+    opacity: 1px;
+    width: 50%;
+    height: 20vh;
+    margin: auto;
+    margin-top: -67.2px;
+    margin-bottom: 2.9%;
+    margin-bottom: 2;
+    /* overflow: hidden; */
+    position: fixed 20% 20%;
+    /* position: absolute; */
+}
+
+#fondo-titulo:hover{
+    border: 7px dotted violet;
+    transition: all 480ms ease-in-out;  
+    background-color: background: rgb(166,67,223);
+    background: linear-gradient(90deg, rgba(166,67,223,1) 0%, rgba(205,81,186,1) 0%, rgba(113,41,164,1) 10%, rgba(189,81,190,1) 36%, rgba(142,76,203,1) 54%, rgba(219,148,233,1) 69%);;
+}
+
+
 #titulo{
     display: flex;
     justify-content: center;
-    color: rgb(105, 28, 109);
-    text-decoration: underline;
-    font-family: 'Roboto Slab', serif;
+   /*  color: rgb(105, 28, 109); */
+   color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Mystery Quest', cursive;
+    margin-top: 11%;
+    font-weight: bolder;
+    
+    
 }
 
+#titulo:hover{
+  
+        text-shadow: 0 0 6px rgb(240, 127, 217);
+        /* border: 3px dotted violet; */
+        transition: all 480ms ease-in-out;   
+}
+
+
+/**aquiiii**/
 /*Contenidoooo1*/
 
 #reseña,#reseña2  {
@@ -110,12 +156,47 @@ body{
     flex-direction: row;
     margin: 0 auto;
     background: rgba(221, 189, 219, 0.236);
-    margin-bottom: 2%;
-    
-    
+    margin-bottom: 2%; 
+    animation: traslado 10s linear;     
   /*   justify-self: center;
     justify-content: center; */
     
+}
+#reseña:hover{
+background: rgb(146 28 216 / 53%);
+transition: all 500ms;
+
+border: 7px dotted violet;
+}
+
+#reseña2:hover{
+    background: rgb(146 28 216 / 53%);
+    transition: all 500ms;
+    
+    border: 7px dotted violet;
+    }
+
+@keyframes traslado {
+    0%{
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(600%) scale(5,5);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-600%) scale(5,5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 2px 2px  1px black;
+        color: white;
+        opacity: 1;
+    }
 }
 #foto{
     width: 25%;
@@ -316,7 +397,7 @@ fieldset{
     background-color: #000000;
     font-family: 'BebasNeue';
     color: white;
-    height: 15vh;
+    height: 17.5vh;
 }
 
 
@@ -334,7 +415,14 @@ fieldset{
     transform: scale(1.2,1.2);
   }
 
+  @media(max-width:1440px){
+  #titulo {
+    font-size: 43px;
+}}
+
 @media(max-width:1168px){
+
+   
 
     #reseña,#reseña2{
         display: flex;
@@ -345,11 +433,12 @@ fieldset{
         width: 90%;
     }
 
-    #foto{
+    #foto {
         display: flex;
         width: 100%;
         justify-content: center;
-        margin-left: -15.2px;
+        margin-left: 1.5px;
+        margin-bottom: 12.5px;
     }
 
 
@@ -378,6 +467,14 @@ fieldset{
 
 }
 
+@media(max-width:945px){
+
+    #foto {
+        margin-left: 2.2px;
+        margin-bottom: 20px;
+        font-size: 20.4px;
+    }
+}
 
 @media(max-width:916px){
 
@@ -385,10 +482,11 @@ fieldset{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 70px;
+        height: 78px;
         background-color: #000000;
         font-family: 'BebasNeue';
         color: white;
+        
     }
     
     #logo{
@@ -435,7 +533,63 @@ fieldset{
 
 }
 
+
+
+@media(max-width:815px){
+    #notas img {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 111.9px;
+        margin: auto;
+        border-radius: 20%;
+        box-shadow: -0.6px -1.5px 4.5px 8.2px rgb(245 196 245);
+    }
+    
+    #notas div {
+        margin: 13.3px;
+        width: 39.7%;
+        margin-left: 7.7%;
+    }
+}
+
+@media(max-width:768px){
+    #menu ul li {
+        font-size: 22.4px;
+    }
+
+    #notas div {
+        margin: 12px;
+        width: 41.3%;
+        margin-left: 30.1%;
+    }
+
+    #titulo {
+        font-size: 33px;
+        margin-top: 22%;
+    }
+
+
+    
+}
+
+/* @media(max-width:782px){} */
+
 @media(max-width:529px){
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 150px;
+        background-color: #000000;
+        color: white;
+    }
+
+    #titulo {
+    text-align: center;
+    }
 
 
     #logo{
@@ -444,7 +598,7 @@ fieldset{
         background-color: transparent;
         /* text-align: center; */
         margin-top: 5px;
-        margin-left: 2px;
+        margin-left: 124.6px;
         letter-spacing: 1px;
         cursor: pointer;
     }
@@ -457,6 +611,12 @@ fieldset{
         margin-right: 4.5%;
     }
 
+    #menu ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
     #menu ul li {
         font-size: 10px;
         display: flex; /* flotar o situar en linea */ 
@@ -466,6 +626,30 @@ fieldset{
         margin-right: 60px;
       
     }
+
+    #menu ul li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        transition: all 200ms;
+        font-size: 15.4px;
+    }
+
+    #notas img {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 70px;
+        margin: auto;
+        border-radius: 20%;
+        width: 52.4%;
+        box-shadow: -0.6px -1.5px 4.5px 8.2px rgb(245 196 245);
+    }
+
+    #notas h3 {
+        font-size: 15.7px;
+    }
+
     #multi{
         width: 100%;
                 /* border: 5px dashed  rgb(86, 42, 243) ; */
@@ -474,11 +658,88 @@ fieldset{
 
     #frase{
         width: 50%;
-        margin-left: 30%; 
+        margin-left: 25%;
         margin-bottom: 8.7%;
         margin-top: 1%;
         border-radius: 5%;
+        margin-top: 10%;
     }
 
-    
+
+    #foto {
+    margin-left: 1.9px;
+    }
+}
+
+
+@media(max-width:390px){
+   /*  #titulo {
+        font-size: 32.1px;
+        margin-top: 26.4%;
+    } */
+
+    #fondo-titulo{
+        width: 81.3%;
+    }
+    #notas div {
+        margin: 12px;
+        width: 51%;
+        margin-left: 23.9%;
+    }
+
+    #logo {
+        margin-top: 16.5px;
+        margin-left: 90px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    iframe {
+        width: 290px;
+        height: 200px;    
+    } 
+   
+
+}
+
+@media(max-width:330px){
+    #titulo {
+        font-size: 28.1px;
+        margin-top: 27.9%;
+    }
+
+    #fondo-titulo{
+        width: 81.3%;
+    }
+
+    #logo{
+    margin-left: 54px;
+    }
+
+    #notas div {
+        margin: 12px;
+        width: 63.7%;
+        margin-left: 19.9%;
+    }
+
+    #foto{
+        font-size: 16.8px;
+    }
+
+    #menu ul li{
+        margin-right: 29.1px
+    }
+
+    iframe {
+        width: 290px;
+        height: 200px;    
+    } 
+
+    #frase {
+        width: 69.2%;
+        margin-left: 15.3%;
+        
+    }
+
+
 }
