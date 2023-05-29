@@ -471,6 +471,12 @@ fieldset{
     }
 } */
 
+@media(max-width:1024px){
+    #fondo-titulo {
+height: 23.6vh;
+}
+}
+
 @media(max-width:945px){
     
 
@@ -573,7 +579,9 @@ fieldset{
         font-size: 33px;
         margin-top: 22%;
     }
-
+     #fondo-titulo {
+        height: 18.5vh;
+    } 
 
     
 }
