@@ -1,7 +1,4 @@
 
-
-
-
 *{
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
@@ -417,7 +414,8 @@ fieldset{
 
   @media(max-width:1440px){
   #titulo {
-    font-size: 43px;
+    font-size: 41.8px;
+    margin-top: 13%;
 }}
 
 @media(max-width:1168px){
@@ -467,7 +465,14 @@ fieldset{
 
 }
 
+/* @media(max-width:1024px){
+    #fondo-titulo {
+        height: 22.7vh;
+    }
+} */
+
 @media(max-width:945px){
+    
 
     #foto {
         margin-left: 2.2px;
@@ -704,12 +709,13 @@ fieldset{
 
 @media(max-width:330px){
     #titulo {
-        font-size: 28.1px;
-        margin-top: 27.9%;
+        font-size: 21px;
+        margin-top: 27.3%;
     }
 
     #fondo-titulo{
         width: 81.3%;
+        height: 22.6vh;
     }
 
     #logo{
@@ -739,6 +745,10 @@ fieldset{
         width: 69.2%;
         margin-left: 15.3%;
         
+    }
+
+    #footer{
+        height: 26.1vh;
     }
 
 
